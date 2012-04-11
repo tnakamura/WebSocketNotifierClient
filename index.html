@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="WebSocketNotifierClient : A Jenkins WebSocketNotifer plugin client for Windows. " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>WebSocketNotifierClient</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/tnakamura/WebSocketNotifierClient">Fork Me on GitHub</a>
+
+          <h1 id="project_title">WebSocketNotifierClient</h1>
+          <h2 id="project_tagline">A Jenkins WebSocketNotifer plugin client for Windows. </h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/tnakamura/WebSocketNotifierClient/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/tnakamura/WebSocketNotifierClient/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>WebSocketNotifierClient</h1>
+
+<h2>説明</h2>
+
+<p>Jenkins のビルド終了通知を受信し、ビルド結果をバルーン表示するツールです。
+タスクトレイに常駐します。</p>
+
+<h2>インストール方法</h2>
+
+<p>適当なフォルダにファイル一式を配置し、ショートカットをスタートアップに登録してください。
+動作には .NET Framework 4 Client Profile 以上が必要です。</p>
+
+<h2>使い方</h2>
+
+<p>スタートアップに登録していれば、自動で起動してタスクトレイに常駐します。
+起動していない(=タスクトレイにアイコンが表示されていない)場合は、主導で exe を実行してください。
+初回起動時に設定ダイアログが表示されます。</p>
+
+<ol>
+<li>WebSocket サーバーの URL を入力してください。
+
+<ul>
+<li>URL は『ws + httpを除いたJenkinsのパス』または『wss + httpsを除いたJenkinsのパス』です。</li>
+</ul>
+</li>
+<li>表示時間はお好みで 10 秒から 30 秒の範囲で入力してください。
+
+<ul>
+<li>上記範囲は OS の制限です。</li>
+<li>デフォルトは 30 秒に設定しています。</li>
+</ul>
+</li>
+<li>ビルド失敗時のみ通知を表示したい場合は、「ビルド失敗時のみ通知する」をチェックしてください。</li>
+</ol><p>タスクトレイアイコンを右クリックするとメニューが表示されます。
+メニューからは設定の変更とアプリケーションの終了ができます。</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">WebSocketNotifierClient maintained by <a href="https://github.com/tnakamura">tnakamura</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
